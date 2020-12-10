@@ -1,0 +1,4 @@
+pymongo==3.7.2
+tornado==6.0.2
+nltk==3.4
+Pyphen==0.9.5

@@ -1,0 +1,24 @@
+{
+  "name": "Einfache Sprache",
+  "description": "Einfache Sprache",
+  "icons": {
+    "48": "assets/icon.png"
+  },
+  "version": "2.1",
+  "permissions": [
+    "activeTab",
+    "*://localhost/*",
+    "*://jupyter.media.h-da.de/*"
+  ], 
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "web_accessible_resources": [
+    "main.css"
+  ],
+  "browser_action": {
+    "default_title": "Einfache Sprache"
+  },
+  "manifest_version": 2
+}

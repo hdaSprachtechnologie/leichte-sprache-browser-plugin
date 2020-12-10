@@ -1,0 +1,46 @@
+.simple-lang{
+	background-color: rgba(100,220,100,0.8);
+	color:#333;
+	position: relative;
+}
+.simple-lang-tooltip-wrap{
+	display: none;
+	padding:15px 20px;
+	background-color: #fff;
+	border-radius: 3px;
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	width: 400px;
+	text-align: center;
+	transform: translate(-50%,0);
+	-webkit-box-shadow: 0px 10px 33px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 33px -8px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 33px -8px rgba(0,0,0,0.75);
+}
+.simple-lang-tooltip{
+	color: #333;
+	font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	    text-transform: none;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+.simple-lang:hover .simple-lang-tooltip-wrap{
+	display: block;
+	z-index: 10;
+}
+
+
+/* loader @see https://www.w3schools.com/howto/howto_js_progressbar.asp alternatively use https://www.w3schools.com/howto/howto_css_loader.asp */
+#hdaProgressBar {
+	width: 100%;
+	background-color: #ddd;
+	display:none;
+}
+  
+#hdaProgress {
+	width: 1%;
+	height: 30px;
+	background-color: #4CAF50;
+}
