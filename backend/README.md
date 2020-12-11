@@ -20,8 +20,12 @@ pipreqs D:\hda-git\leichtesprache\src\backend\lesbarserver
 * double click start.bat
 * or enter `python -m lesbarserver`
 * test with
-  * http://localhost:8888/ --> returns Einfache Sprache works
-  * http://localhost:8888/easyword/anything --> returns {original: "bla", easy: "easy", details	"details"}
+  * http://localhost:8888/ -> returns Einfache Sprache works
+  * curl -i -X POST -H 'Content-Type: application/json' -d '["Linguistik"]' 
+	http://localhost:8888/easywordlist -> returns {"replacements": [{"org": "Linguistik", 
+	"easy":  "Sprach\u00b7wissenschaft - Forschung \u00fcber Sprache"}]}
+  <!--- * http://localhost:8888/easyword/anything -> returns {original: "bla", easy: "easy", 
+  details	"details"} --->
 
 ## generate documentation
 * use sphinx -- install with 
